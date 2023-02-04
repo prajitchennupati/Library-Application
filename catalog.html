@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog</title>   
+    <h1>Book Catalog</h1>
+            
+</head>
+<body>
+    
+    {% if message %}
+        {% autoescape false %}
+             <p style="color:blue;">{{ message }}</p>
+        {% endautoescape %}
+    {% endif %}
+    
+    {% if books %}
+        {% autoescape false %}
+             <pre>{{ books }}</pre>
+        {% endautoescape %}
+    {% endif %}
+    
+    <table>
+        <tr>
+            <td>
+                <form action="/add" method="post">       
+                    <p>
+                        <button name="add" onClick="add()">Add</button>
+                    </p>
+                </form>
+            </td>
+            <td>
+                <form action="/checkout" method="post">       
+                    <p>
+                        <button name="checkout" onClick="add()">Checkout</button>
+                    </p>
+                </form>
+            </td>
+            <td>
+                <form action="/checkin" method="post">       
+                    <p>
+                        <button name="checkin" onClick="add()">Checkin</button>
+                    </p>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

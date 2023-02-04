@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkoutlist</title>
+    <h1>Checkout Book</h1>
+</head>
+<body>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    
+    {% if personname %}
+        <table>
+            <tr>
+                <td><label for="personname">Person Name: </label></td>
+                <td><label for="personname">{{ personname }}</label></td>
+            </tr>                
+        </table>
+    {% endif %}
+    
+    {% if books %}
+        {% autoescape false %}
+             <pre>{{ books }}</pre>
+        {% endautoescape %}
+    {% endif %}
+    
+    <table>
+        <tr>
+            <td>
+                <form action="" method="post">                    
+                        <label for="booknumber">Book Number</label>
+                        <input type="text" name="booknumber" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                        <button type="submit" value="Submit">Submit</button>                   
+                        <button type="reset" value="Reset">Reset</button>                    
+                </form>
+            </td>
+            <td>        
+                <form action="/catalog" method="post">
+                    <p>
+                        <button name="catalog" onClick="catalog()">Catalog</button>
+                    </p>
+                </form>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
+
+
+
