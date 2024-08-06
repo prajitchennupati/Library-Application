@@ -3,7 +3,7 @@
 - Customizable
 - Extendable With Third-Party Libraries
 
-##Features
+-#Features
 - Cataloging Books
 - Updating Database (File)
 - Tracking Book Status
