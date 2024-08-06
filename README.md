@@ -3,15 +3,15 @@
 - Customizable
 - Extendable With Third-Party Libraries
 
--#Features
+FEATURES
 - Cataloging Books
 - Updating Database (File)
 - Tracking Book Status
 
-##Languages
+LANGUAGES
 - Python
 - HTML
 
-##Credits
+CREDITS
 - Original Work By @prajitchennupati
 - Contributions & Remixing Are Welcome
