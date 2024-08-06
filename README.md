@@ -1,5 +1,17 @@
 # Library Application
+- Open Source Library Management System
+- Customizable
+- Extendable With Third-Party Libraries
 
-Free to use open source code for a classroom Library Application.
+##Features
+- Cataloging Books
+- Updating Database (File)
+- Tracking Book Status
 
-Made By Me.
+##Languages
+- Python
+- HTML
+
+##Credits
+- Original Work By @prajitchennupati
+- Contributions & Remixing Are Welcome
